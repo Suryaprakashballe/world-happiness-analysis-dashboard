@@ -1,40 +1,102 @@
 🌍 World Happiness Report Analysis & Dashboard
-🔍 Project Overview
+📌 Project Overview
 
-This project analyzes the World Happiness Report dataset using Python to understand the key factors influencing happiness scores across countries.
+This project analyzes the World Happiness Report dataset to understand the key social and economic factors that influence happiness levels across countries.
 
-The analysis explores the relationship between happiness and indicators such as GDP per capita, social support, healthy life expectancy, and freedom.
-The final insights are presented through an HTML dashboard for effective storytelling and visualization.
+Using Python, the project performs data cleaning, exploratory data analysis, correlation analysis, and basic validation through a train–test approach.
+The final insights are presented through a Python-generated HTML dashboard for effective storytelling and visualization.
+
+🎯 Objectives
+
+Identify factors that contribute most to a country’s happiness score
+
+Analyze relationships between happiness and socio-economic indicators
+
+Validate analytical insights using a basic train–test approach
+
+Present insights in an interactive and easy-to-understand dashboard
 
 🛠 Tools & Technologies
 
-Python – Data analysis and visualization
+Python
 
 pandas, numpy – Data cleaning and transformation
 
-matplotlib, seaborn – Visual analysis
+matplotlib, seaborn – Data visualization
+
+scikit-learn – Train–test split and basic validation
 
 HTML – Dashboard presentation
 
+📂 Dataset
+
+Source: World Happiness Report
+
+Data Includes:
+
+Happiness Score
+
+GDP per Capita
+
+Social Support
+
+Healthy Life Expectancy
+
+Freedom to Make Life Choices
+
+Generosity
+
+Perceptions of Corruption
+
 🧹 Data Cleaning & Preparation
 
-Handled missing and inconsistent values
+Converted object-type numerical columns to numeric format using safe type conversion
 
-Standardized country and numeric indicators
+Handled missing values using mean imputation
 
-Prepared data for correlation and trend analysis
+Standardized and validated feature columns
 
-📊 Key Analysis Performed
+Prepared clean feature and target datasets for analysis and validation
+
+📊 Exploratory Data Analysis
+
+The following analyses were performed:
 
 Distribution analysis of happiness scores
 
-Correlation analysis between happiness and socio-economic factors
+Correlation analysis between happiness score and socio-economic indicators
 
 GDP per capita vs happiness score comparison
 
-Regional analysis of happiness levels
+Regional comparison of happiness levels
 
-Identification of top and bottom performing countries
+Identification of top and bottom ranked countries by happiness score
+
+🤖 Train–Test Validation
+
+A basic train–test approach was applied to validate analytical insights.
+
+Key socio-economic indicators were selected as features
+
+The dataset was split into training and testing subsets
+
+A simple regression-based approach was used to understand how well these factors explain variations in happiness scores
+
+📌 Purpose:
+This step was performed to support and validate analytical findings, not to build a production-level machine learning model.
+
+Key takeaway:
+Economic and social indicators together explain a significant portion of happiness variation, reinforcing the importance of health and social support beyond economic growth alone.
+
+📈 Dashboard
+
+The final insights are presented through a Python-generated HTML dashboard, allowing users to visually explore:
+
+Happiness score distribution across countries
+
+Relationships between GDP, health, and happiness
+
+Regional trends and disparities
 
 🔑 Key Insights
 
@@ -42,14 +104,19 @@ Countries with higher GDP per capita and strong social support tend to have high
 
 Healthy life expectancy shows a strong positive correlation with happiness
 
-Economic growth alone is insufficient without social and health factors
+Economic growth alone does not guarantee happiness without social and health factors
 
-Regional disparities play a significant role in overall happiness
-
-📈 Dashboard
-
-The final insights are presented using a Python-generated HTML dashboard, allowing users to visually explore trends and relationships across countries.
+Significant regional disparities exist in happiness levels
 
 📌 Conclusion
 
-This project highlights how data-driven analysis can uncover social and economic factors affecting global happiness and demonstrates the ability to translate analytical findings into an accessible dashboard format.
+This project demonstrates how data-driven analysis can be used to understand complex social phenomena.
+By combining Python-based analysis, validation techniques, and dashboard storytelling, the project highlights the key drivers of global happiness in a clear and interpretable manner.
+
+🚀 Future Scope
+
+Extend analysis with additional years of data
+
+Explore country-level time series trends
+
+Enhance dashboard interactivity
